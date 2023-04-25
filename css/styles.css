@@ -13,9 +13,12 @@
   margin: 100px;
   border-radius: 15px;
   background-color: #fff;
+  display: flex;
 }
 
 .ad-img {
+  background: url(/product-preview-card-component-main/images/image-product-desktop.jpg);
+  background-size: 110%;
   width: 300px;
   height: 480px;
   float: left;
@@ -69,13 +72,37 @@
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   background: hsl(158, 36%, 37%);
-  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.icon {
-  margin: 0px 10px 0px 10px;
+.add-cart-button:hover {
+  background-color:  hsl(158, 50%, 24%);
 }
 
-@media (min-width: 375px) {
-  
+@media (max-width: 500px) {
+  .main-box {
+    width: 400px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ad-img {
+    background: url(/product-preview-card-component-main/images/image-product-mobile.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .discription {
+    width: 340px;
+    margin: 0;
+    padding: 20px;
+  }
 }
